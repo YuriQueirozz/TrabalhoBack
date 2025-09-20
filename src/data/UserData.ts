@@ -11,4 +11,12 @@ export class UserData {
             throw new Error(error.sqlMessage || error.message);
         }
     }
+
+    getUserById = (id: number) => {
+        console.log("Recebendo id:", id);
+
+        const user = users.find(u => u.id === id);
+        console.log("Usuário encontrado: ", user); 
+        return user;
+    }
 }

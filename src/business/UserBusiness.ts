@@ -1,3 +1,4 @@
+import { users } from "../bd";
 import { UserData } from "../data/UserData";
 
 export class UserBusiness {
@@ -20,4 +21,14 @@ export class UserBusiness {
             throw new Error(error)
         }
     }
+
+    getUsersById = (id: number) => {
+    console.log("Recebendo id:", id);
+    
+    const user = users.find(u => u.id === id);
+    console.log("Usuário encontrado: ", user);
+    
+    return user || undefined;
+}
+
 }

@@ -1,3 +1,3 @@
 export const users = [
-    {name: "Flávio", email: "flavio@flavio.com", senha: "flavio"}
+    {name: "Flávio", email: "flavio@flavio.com", senha: "flavio", id: 1}
 ]
